@@ -21,4 +21,4 @@ The following technologies were used to build this app:
 **HTML<br>
 CSS<br>
 JavaScript<br>
-React<br>*
+React<br>**
