@@ -1,13 +1,97 @@
-body {
+@import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+
+
+body, html {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Pokemon Solid', sans-serif;
+ 
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.App {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   min-height: 100%;
+   width: 100%;
+   background-color: red;
+   gap: 1rem;
+   border: solid 5px black;
 }
+
+
+.CardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  flex-direction: row;
+  background-color: white ;
+  border: solid 5px black;
+  gap: 1rem;
+}
+
+
+
+.card {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 10rem;
+  border: black 0.25rem solid;
+  background-color: yellow;
+}
+
+.headerText {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: yellow;
+  letter-spacing: 0.25rem;
+  -webkit-text-stroke: 0.1rem black;
+}
+
+
+.points {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: yellow;
+  letter-spacing: 0.25rem;
+  -webkit-text-stroke: 0.1rem black;
+
+}
+
+@media screen and (max-width: 1130px) {
+  .App {
+    height: 100%;
+  }
+
+  .headerText {
+    font-size: 1rem;
+  }
+
+  .points {
+    font-size: 0.85rem;
+  }
+
+  .CardContainer{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .imageCard{
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+
+
